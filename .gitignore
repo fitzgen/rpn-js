@@ -1,1 +1,3 @@
+examples/*.js
+examples/*.map
 node_modules/
