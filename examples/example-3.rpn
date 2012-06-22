@@ -1,0 +1,5 @@
+a 5 =;
+b 0 =;
+
+# Should produce a divide by zero error
+a b / 1 print;

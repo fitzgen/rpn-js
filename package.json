@@ -1,0 +1,17 @@
+{
+  "author": "Nick Fitzgerald <fizgen@gmail.com> (http://fitzgeraldnick.com)",
+  "name": "rpn-js",
+  "description": "A reverse polish notation -> JavaScript compiler using source maps",
+  "version": "0.0.0",
+  "main": "./lib/rpn.js",
+  "directories": { "lib": "./lib" },
+  "dependencies": {
+      "jison": ">=0.3.10",
+      "source-map": ">=0.1.1"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
