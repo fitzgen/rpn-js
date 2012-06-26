@@ -1,2 +1,4 @@
-a 5 =;
-a 1 print;
+a 8 =;
+b 3 =;
+c a b 3 - / =;
+c 1 print;
