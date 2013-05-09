@@ -8,7 +8,9 @@ process.argv.slice(2).forEach(function (file) {
         originalFilename: file
     }).toStringWithSourceMap({
         file: file.replace(/\.[\w]+$/, ".js.map")
-    })
-    fs.writeFileSync(file.replace(/\.[\w]+$/, ".js"), output.code);
-    fs.writeFileSync(file.replace(/\.[\w]+$/, ".js.map"), output.map);
+    });
+    var sourceMapFile = file.replace(/\.[\w]+$/, ".js.map");
+    fs.writeFileSync(file.replace(/\.[\w]+$/, ".js"),
+                     output.code + "\n//@ sourceMappingURL=" + sourceMapFile);
+    fs.writeFileSync(sourceMapFile, output.map);
 });

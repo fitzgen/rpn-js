@@ -6,8 +6,8 @@
   "main": "./lib/rpn.js",
   "directories": { "lib": "./lib" },
   "dependencies": {
-      "jison": ">=0.3.10",
-      "source-map": ">=0.1.1"
+      "jison": ">=0.4.4",
+      "source-map": ">=0.1.22"
   },
   "devDependencies": {},
   "optionalDependencies": {},
