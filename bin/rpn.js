@@ -18,7 +18,7 @@ process.argv.slice(2).forEach(function (sourceFilename) {
     //so that the browser’s debugger knows where to find the source map.
     output.code +=  "\n//@ sourceMappingURL=" + mapFilename;
     
-    fs.writeFileSync(codeFilename, output.code +);
+    fs.writeFileSync(codeFilename, output.code);
     fs.writeFileSync(mapFilename,  output.map);
     
 });
