@@ -5,7 +5,7 @@ var rpn = require("rpn");
 process.argv.slice(2).forEach(function (sourceFilename) {
     
     var codeFilename   = sourceFilename.replace(/\.[\w]+$/, ".js");   
-    var mapFilename    = codeFilename + ".map");    
+    var mapFilename    = codeFilename + ".map";    
     
     var input          = fs.readFileSync(sourceFilename);
     
