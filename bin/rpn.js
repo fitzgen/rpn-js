@@ -11,7 +11,7 @@ process.argv.slice(2).forEach(function (sourceFilename) {
     
     var rootSourceNode = rpn.compile(input, {originalFilename: sourceFilename});
     
-    // output :: { code :: String, map :: String }
+    // output :: { code :: String, map :: SourceMapGenerator }
     var output         = rootSourceNode.toStringWithSourceMap({ file: mapFilename});
 
     //We must add the //# sourceMappingURL comment directive 
